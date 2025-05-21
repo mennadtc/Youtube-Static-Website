@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75px;
+    position: fixed;
+    background-color: whitesmoke;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #AAAAAA;
+    z-index: 99999;
+}
+
+.first-sec {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.first-sec i {
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-right: 22px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-sec i:hover {
+    background-color: #aaaaaa4f;
+}
+
+.first-sec img {
+    width: 95px;
+    cursor: pointer;
+}
+
+.first-sec span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: #AAAAAA;
+    font-family: 'Arial';
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.second-sec {
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
+}
+
+.second-sec form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.second-sec form input {
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 115px;
+    border-radius: 20px 0 0 20px;
+    border: 1px rgba(0, 0, 0, 0.4) solid;
+    min-width: 500px;
+    height: 100%;
+}
+
+.second-sec form input::placeholder{
+    accent-color: #AAAAAA;
+    font-size: 1.2em;
+}
+
+.second-sec form button{
+    border-radius: 0 20px 20px 0;
+    padding: 5px 10px;
+    border: 1px rgba(0, 0, 0, 0.4) solid;
+    border-left: none;
+    height: 100%;
+}
+
+.second-sec form button i {
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.second-sec div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.second-sec div:hover {
+    background-color: #aaaaaa4f;
+}
+
+.second-sec div i {
+    font-size: 1.2em;
+}
+
+.third-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.third-sec i{
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-left: 30px;
+}
+
+.container{
+    display: flex;
+    margin-top: 75px; 
+    height: calc(100vh - 75px);
+}
+
+/* section 1 */ 
+
+aside{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    width: 15%;
+    padding-top: 0px;
+    /* position: absolute;
+    background-color: transparent;
+    height: 100vh;
+    overflow-y: auto;
+    left: 0; 
+    top: 75px;
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 20px; */
+}
+
+aside nav .tab span, aside nav .tab i{
+    color: black;
+    font-size: 1em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+aside nav .tab i{
+    width: 10px;
+}
+
+aside nav .tab span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.tab {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    transition: 0.6s ease;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.tab:hover{
+    background-color: #aaaaaa4f;
+}
+
+hr {
+    height: 1px;
+    margin-left: 20px;
+    border: none;
+    background-color: #aaaaaa8c;
+}
+
+/* videos card content */
+.content {
+    flex: 1;
+    overflow-y: auto; /* optional if you want main content scrollable */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px; 
+}
+
+.video{
+    width: 250px;
+    /* margin: 10px; */
+}
+
+.thumb {
+    width: 100%;
+}
+
+.video-content{
+    display: flex;
+    margin-top: 5px;
+    align-items: start;
+}
+
+.prof-pic{
+    margin: 0px 10px 10px 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.prof-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vid-title{
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2; */
+}
+
+.creator-name, .views-count{
+    color: #AAAAAA;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+.views-count{
+    color: #726e6ec7;
+}
+
+.creator-name {
+    cursor: pointer;
+}
+
+.creator-name:hover{
+    color: #726e6e;
+}
+
+/* media query */ 
+
+@media (max-width: 1024px){
+    aside nav .tab span, aside nav .tab i{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px){
+    .fa-play{
+        margin-left: 16px !important;
+    }
+    .first-sec i {
+        margin-left: -5px;
+    }
+
+    .second-sec form input {
+        min-width: 200px;
+        height: 100%;
+    }
+
+    .third-sec{
+        display: none;
+    }
+
+    aside{
+        width: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 5px;
+        text-align: center;
+    }
+
+    aside nav .tab span{
+        font-size: 0.6em;
+        text-align: center;
+        margin-top: 5px !important;
+        margin: 0;
+    }
+
+
+    aside nav .tab i{
+        font-size: 1.2em;
+        margin-left: 8px;
+    }
+
+    hr {
+        margin-left: 5px;
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width: 425px){
+    aside{
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: 1fr; /* One column layout */
+        max-width: 400px;
+        justify-content: center;
+        gap: 20px
+    }
+
+    .video{
+        margin: auto;
+    }
+
+    .second-sec form input {
+        display: none;
+    }
+
+    .second-sec form{
+        margin: 0;
+    }
+
+    .second-sec form button{
+        border: none;
+    }
+    
+    .second-sec form button i {
+        font-size: 1.8em;
+        color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+    }
+    
+    .second-sec div i{
+        margin-right: 10px;
+    }
+
+    .third-sec{
+        display: none;
+    }
+}
